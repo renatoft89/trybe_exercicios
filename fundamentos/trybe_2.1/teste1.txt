@@ -1,3 +1,0 @@
-Trybe
-Git
-javascript
