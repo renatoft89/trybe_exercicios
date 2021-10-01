@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Windows
+Cmd
+Diretorios
+Arquivos
+Executaveis
