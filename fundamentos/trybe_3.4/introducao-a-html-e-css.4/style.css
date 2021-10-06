@@ -1,0 +1,19 @@
+.nav-links li{
+  display: inline;
+  background: seagreen;
+}
+.nav{
+  float: right;
+  margin-right: 2px;
+}
+
+
+table, tr, td{
+  border: 2px solid black;
+}
+td{
+  font-size: large;
+}
+.tab-titulo{
+  font-weight: bold;
+}
