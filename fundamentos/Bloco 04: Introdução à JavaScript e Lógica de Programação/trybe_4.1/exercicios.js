@@ -189,7 +189,7 @@ vl_lucro = (vl_venda_prod-vl_custo_total)* 1000;
 
   console.log(vl_lucro)
 
-//exercicio
+//exercicio-11
 
 const sl_bruto = 4000.00;
 
