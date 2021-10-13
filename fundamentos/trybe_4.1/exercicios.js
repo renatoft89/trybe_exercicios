@@ -137,3 +137,18 @@ else if (nota>=50){
 else if (nota<50){
   console.log("Sua nota é F");
 }
+
+//exercicio-8
+
+const a = 11;
+
+const b = 17;
+
+const c = 12;
+
+var par = false
+
+if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0){
+  var par = true;
+}
+console.log(par);
