@@ -167,3 +167,24 @@ if (a % 2 != 0 || b % 2 != 0 || c % 2 != 0){
   var impar = true;
 }
 console.log(impar);
+
+//exercicio-10
+
+const vl_cust_prod = 100;
+
+const vl_venda_prod = 300;
+
+const qtd_vendas = 100;
+
+var vl_lucro = 0;
+
+var vl_custo_total = 0;
+
+vl_custo_total = ((vl_cust_prod*20/100)+(vl_cust_prod))
+vl_lucro = (vl_venda_prod-vl_custo_total)* 1000;
+
+  console.log(vl_custo_total);
+
+  console.log(vl_lucro)
+
+
