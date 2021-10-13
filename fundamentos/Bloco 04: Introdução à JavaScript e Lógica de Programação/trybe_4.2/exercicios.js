@@ -12,3 +12,11 @@ let indexOfPortfolio = menu.indexOf('Portfólio');
 
 console.log (menu.length)
 console.log(indexOfPortfolio);
+
+//exercicio-3
+
+let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+
+menu.push('Contato');
+
+console.log(menu);
