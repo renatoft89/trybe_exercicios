@@ -152,3 +152,18 @@ if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0){
   var par = true;
 }
 console.log(par);
+
+//exercicio-9
+
+const a = 13;
+
+const b = 18;
+
+const c = 122;
+
+var impar = false
+
+if (a % 2 != 0 || b % 2 != 0 || c % 2 != 0){
+  var impar = true;
+}
+console.log(impar);
