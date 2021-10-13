@@ -77,3 +77,63 @@ if (ang1 < 0 || ang2 < 0 || ang3 < 0) {
   console.log("false");
 }
   
+//exercicio-6
+
+var peça = "cAVALO".toLocaleLowerCase();
+
+
+switch (peça){
+  case "bispo":
+    console.log("O bispo se move em uma linha reta diagonalmente no tabuleiro");
+    break;
+
+
+  case "torre":
+    console.log("A torre se move em linha reta horizontalmente e verticalmente pelo número de casas não ocupadas, até atingir o final do tabuleiro ou ser bloqueado por outra peça.");
+    break;
+
+
+  case "cavalo":
+    console.log("O cavalo move-se por duas casas horizontalmente ou verticalmente e então uma casa a mais em uma ângulo reto.");
+    break;
+
+
+  case "rainha":
+    console.log("A Rainha pode mover-se qualquer número de casas em linha reta - verticalmente, horizontalmente ou diagonalmente.");
+    break;
+
+
+  case "rei":
+    console.log("O rei pode se mover para qualquer casa adjacente.");
+    break;
+
+    default:
+      console.log("Erro não faz parte do jogo");
+}
+
+//exercicio-7
+
+var nota = 60;
+
+
+if (nota<0 || nota>100){
+  console.log("Verificar Nota - Erro");
+}
+else if (nota>=90){
+  console.log("Sua Nota é A");
+}
+else if (nota>=80){
+  console.log("Sua nota é B");
+}
+else if (nota>=70){
+  console.log("Sua nota é C");
+}
+else if (nota>=60){
+  console.log("Sua nota é D");
+}
+else if (nota>=50){
+  console.log("Sua nota é E");
+}
+else if (nota<50){
+  console.log("Sua nota é F");
+}
