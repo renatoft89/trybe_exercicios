@@ -1,5 +1,7 @@
 //exercicio-1
 
+const { Console } = require("console");
+
 const operador = ('*');
 
 var num1 = 6;
@@ -187,4 +189,43 @@ vl_lucro = (vl_venda_prod-vl_custo_total)* 1000;
 
   console.log(vl_lucro)
 
+//exercicio
 
+const sl_bruto = 4000.00;
+
+
+if (sl_bruto < 1556.94){
+  var inss = (sl_bruto*8)/100;
+
+}else if (sl_bruto<= 2594.92){
+  var inss = (sl_bruto*9)/100;
+
+}else if (sl_bruto<=5189.82){
+  var inss = (sl_bruto*11/100);
+
+}else{ (sl_bruto>5189.82);
+  var inss = 570.88; 
+};
+console.log("O valor do Inss é R$", inss)
+let sl_liquido = (sl_bruto - inss)
+  console.log("Seu salario tem a aliquota do inss no valor de: R$",inss,  "O salário liquido é: R$", sl_liquido);
+
+
+if (sl_liquido<1903.98){
+  var ir = 0;
+
+}else if( sl_liquido<=2826.65 ){
+  var ir =( sl_liquido*7,5/100 ) - 142.80;
+
+}else if( sl_liquido<=3751.05){
+  var ir  =(sl_liquido*15/100) - 354.80;
+
+}else if( sl_liquido<=4664.68) {
+  var ir =( sl_liquido*22.5/100) - 636.13;
+
+}else {
+  var ir =(sl_liquido*27.5/100) - 869.36;
+
+};
+console.log("O valor do Imposto de Renda é R$", ir)
+console.log(" O salario Base será de: R$", +(sl_liquido-ir))
