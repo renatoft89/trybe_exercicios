@@ -3,3 +3,4 @@ let numerosSorteados =  Math.ceil(Math.random(6)*60);
 
 
 console.log(numerosSorteados)
+

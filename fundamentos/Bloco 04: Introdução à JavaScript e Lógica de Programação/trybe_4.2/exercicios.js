@@ -86,3 +86,61 @@ for (let index=0; index<numbers.length; index++){
   }
 }
 console.log(maior);
+
+//EXERCICIO-6
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let impar= 0;
+
+for (let index =0; index < numbers.length; index++){
+  if(numbers[index]%2!==0){
+    impar += 1;
+    
+  }
+}
+if (impar === 0){
+  console.log("Erro!")
+}else{
+  console.log(impar);
+}
+
+  
+
+
+//EXERCICIO-7
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27, 1];
+let menor = numbers[0];
+
+for (let index=0; index<numbers.length; index++){
+  if (numbers[index]<menor){
+    menor = numbers[index];
+    
+  }
+}
+console.log(menor);
+
+//EXERCICIO-8
+
+let lista = [];
+
+for ( index = 0; index <= 25 ; index++ ){
+  lista.push(index);
+
+}
+console.log(lista);
+
+//EXERCICIO-9
+
+let lista = [];
+let divisao = []
+
+for ( index = 0; index <= 25 ; index++ ){
+  lista.push(index)
+  divisao[index] = (lista[index]/2);
+
+}
+
+console.log(divisao);
+
+
