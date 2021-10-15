@@ -46,3 +46,38 @@ for (index in info){
     console.log(info[index], 'e', info2[index]);
   }
 }
+
+//FUNÇÕES:
+
+// 1 - Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
+// Exemplo de palíndromo: arara .
+// verificaPalindrome('arara') ;
+// Retorno esperado: true
+// verificaPalindrome('desenvolvimento') ;
+// Retorno esperado: false
+
+
+function palindromo(frase) {
+
+  let fraseSplit = frase.split("");
+
+  let fraseReverse = fraseSplit.reverse('');
+
+  let fraseJoin = fraseReverse.join('');  
+
+  if ( fraseJoin===frase) {
+    verifica = true ;
+      
+  }else{
+    verifica = false;
+  }
+  if (verifica === false){
+    console.log(frase +' não é um palindromo!')
+  }else{
+    console.log(frase + ' é um palindromo!')
+  }
+  return fraseJoin;
+}  
+
+  palindromo("arara");
+
