@@ -102,3 +102,16 @@ console.log(maiorValor([27, 39, 6, 7, 10, 16]));
 // Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
 // Valor esperado no retorno da função: 6 .
 
+
+function menorValor(lista){
+  let menor = 0;
+  for (let key in lista){
+    if(lista[menor] > lista[key]){
+      menor = key;
+    }
+  }
+
+  return menor;
+  
+}
+console.log(menorValor([2, 4, 6, 7, 10, 0, -3]));
