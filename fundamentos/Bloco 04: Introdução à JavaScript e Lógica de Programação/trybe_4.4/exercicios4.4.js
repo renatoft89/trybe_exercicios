@@ -79,5 +79,26 @@ function palindromo(frase) {
   return fraseJoin;
 }  
 
-  palindromo("arara");
+  palindromo("pele");
+
+// 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+// Array de teste: [2, 3, 6, 7, 10, 1]; .
+// Valor esperado no retorno da função: 4 .
+
+function maiorValor(lista){
+  let maior = 0;
+  for (let key in lista){
+    if(lista[maior] < lista[key]){
+      maior = key;
+    }
+  }
+
+  return maior;
+  
+}
+console.log(maiorValor([27, 39, 6, 7, 10, 16]));
+
+// //3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+// Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
+// Valor esperado no retorno da função: 6 .
 
