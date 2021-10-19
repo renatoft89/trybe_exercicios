@@ -131,3 +131,26 @@ function contaCaracter(nomes){
 }
 
 console.log(contaCaracter(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+
+// 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+// Array de teste: [2, 3, 2, 5, 8, 2, 3]; .
+// Valor esperado no retorno da função: 2 .
+
+
+function contaRepeticao(numeros){
+  let contador = numeros[0];
+
+  for (let key in numeros) {    
+    if ( numeros[key] == numeros[contador] ){
+      contador[key] = numeros[key];
+    }
+  }
+  return contador;
+}
+
+console.log(contaRepeticao([3, 3, 4, 5, 8, 3, 3, 9, 9, 9, 9]));
+
+for (let i = 0; i <= 10; i += 1) {
+  console.log(i);
+}
