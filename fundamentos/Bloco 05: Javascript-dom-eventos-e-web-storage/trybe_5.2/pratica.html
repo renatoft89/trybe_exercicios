@@ -24,23 +24,5 @@
   <script src="script.js"></script>
 </body>
 
-1-Acesse o elemento elementoOndeVoceEsta .
-document.querySelector('section#elementoOndeVoceEsta');
 
-2-Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
-document.querySelector('section#elementoOndeVoceEsta').parentNode;
-
-mudaCorPai = document.querySelector('section#elementoOndeVoceEsta').parentNode;
-mudaCorPai.style.color = "rgb(220, 20, 60)";
-
-3-Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
-document.querySelector('section#primeiroFilho');
-texto = document.querySelector('section#primeiroFilho');
-texto.innerHTML = "Estamos na Trybe"; 
-
-4-Acesse o primeiroFilho a partir de pai .
-document.querySelector('section#pai').firstElementChild;
-
-5-Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
-document.querySelector('#elementoOndeVoceEsta').previousElementSibling;
 </html>
