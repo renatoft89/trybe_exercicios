@@ -127,6 +127,23 @@ function imgSrc() {
 }
 imgSrc();
 
+function arrayList() {
+
+  let elementUl = document.createElement('ul');
+  let myElementSectionRight = document.querySelector('.right-content')
+  myElementSectionRight.appendChild(elementUl);
+  
+  const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+    'Sete', 'Oito', 'Nove', 'Dez']
+  
+  for (let num in arrayNumbers) {
+    const elementLi = document.createElement('li');
+    elementLi.innerHTML = arrayNumbers[num];
+    elementUl.appendChild(elementLi);
+  }  
+}
+arrayList();
+
     </script>
   </body>
 </html>
