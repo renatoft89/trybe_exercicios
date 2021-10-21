@@ -60,3 +60,72 @@ function terceiroPartirFilho() {
 }
 
 terceiroPartirFilho();
+
+// Exercicios - Parte II
+
+// 1 - Crie um irmão para elementoOndeVoceEsta.
+function addBrother() {
+  let myElement = document.createElement('section');
+
+  myElement.id = "irmao";
+  let container = document.querySelector('#pai');
+
+  container.appendChild(myElement);
+
+}
+
+addBrother();  
+
+// 2 - Crie um filho para elemento ondeVoceEsta.
+
+function addFilhoOnd() {
+  let myElementFilho = document.createElement('section');
+
+  myElementFilho.id = "filhoO";
+  let containerFilho = document.querySelector('#elementoOndeVoceEsta');
+
+  containerFilho.appendChild(myElementFilho);
+
+}
+
+addFilhoOnd();
+
+// 3 - Crie um filho para primeiroFilhoDoFilho 
+
+function addSon() {
+  let myElementFilhoDoFilho = document.createElement('section');
+
+  myElementFilhoDoFilho.id = "filhoDoFilho";
+  let containerFilhDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+  
+  containerFilhDoFilho.appendChild(myElementFilhoDoFilho);
+
+}
+
+addSon();
+
+// 4- 
+
+function threeFilho(){
+  let myElementThreeFilho = document.createElement('section');
+
+  myElementThreeFilho.id = "threeFilho";
+  let containerThreeFilho = document.querySelector('#filhoDoFilho');
+
+  containerThreeFilho.appendChild(myElementThreeFilho);
+}
+threeFilho();
+
+// Remova todos os elementos filhos de paiDoPai exceto pai,
+    // elementoOndeVoceEsta e primeiroFilhoDoFilho.
+    const pai = document.getElementById('pai');
+
+    for (let index = pai.childNodes.length - 1; index >= 0; index -= 1) {
+      const currentChildren = pai.childNodes[index];
+      if (currentChildren.id !== 'elementoOndeVoceEsta') {
+        currentChildren.remove();
+      }
+    }
+
+    const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
