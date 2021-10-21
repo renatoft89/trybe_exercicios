@@ -67,6 +67,66 @@ function textH1() {
     title.innerHTML = "Exercício 5.2 - JavaScript DOM"
 }
 textH1();
+
+function mainClass() {
+    let myElementMain = document.createElement('main');
+
+    myElementMain.className = "main-content";
+    let containerMain = document.querySelector('body');
+    containerMain.appendChild(myElementMain);
+}
+mainClass();
+
+
+function sectionClass() {
+    let myElementSection = document.createElement('section');
+
+    myElementSection.className = "center-content";
+    let containerSection = document.querySelector('main');
+    containerSection.appendChild(myElementSection);
+}
+sectionClass();
+
+
+function tagP() {
+    let myElementP = document.createElement('p');
+
+    let containerP = document.querySelector('.center-content');
+    containerP.appendChild(myElementP);
+
+    let tagParagrafo = document.getElementsByTagName('p')[0];
+    tagParagrafo.innerHTML = "DOM"
+}
+tagP();
+
+function sectionClassLeft() {
+    let myElementSectionLeft = document.createElement('section');
+
+    myElementSectionLeft.className = "left-content";
+    let containerSectionLeft = document.querySelector('main');
+    containerSectionLeft.appendChild(myElementSectionLeft);
+}
+sectionClassLeft();
+
+function sectionClassRight() {
+    let myElementSectionRight = document.createElement('section');
+
+    myElementSectionRight.className = "right-content";
+    let containerSectionRight = document.querySelector('main');
+    containerSectionRight.appendChild(myElementSectionRight);
+}
+sectionClassRight();
+
+function imgSrc() {
+  let myElementImg = document.createElement('img');
+  myElementImg.className = 'small-image';
+
+  myElementImg.src = 'https://picsum.photos/200';
+  let containerImg = document.querySelector('.left-content');
+  containerImg.appendChild(myElementImg);
+}
+imgSrc();
+
     </script>
   </body>
 </html>
