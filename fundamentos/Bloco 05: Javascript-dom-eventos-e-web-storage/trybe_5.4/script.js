@@ -39,6 +39,15 @@ containerButton.addEventListener('click', function(){
    }
   });
 
-//  
-
+// 3 - Tamanho da Fonte
+let buttonSize = document.querySelector('.button-fontSize')
+let tamanhoFont = document.querySelector('p').style.fontSize = '12px';
+  
+buttonSize.addEventListener('click', function() {
+  
+    tamanhoFont = document.querySelector('p').style.fontSize = (parseInt(tamanhoFont)+1)+"px";
+    console.log(tamanhoFont);
+  
+  
+})
 }
