@@ -21,6 +21,7 @@ let colorBackground = document.querySelectorAll('body');
 containerButton.addEventListener('click', function(){
   for (let index = 0; index < colorBackground.length; index =+1) {
     let colorBackgroundColor = backgroundColors[Math.floor((Math.random() * backgroundColors.length))]
+    console.log(colorBackgroundColor)
     colorBackground[index].style.backgroundColor = colorBackgroundColor;
     localStorage.setItem("backgroundColorPage", colorBackgroundColor)
   }
@@ -41,13 +42,54 @@ containerButton.addEventListener('click', function(){
 
 // 3 - Tamanho da Fonte
 let buttonSize = document.querySelector('.button-fontSize')
-let tamanhoFont = document.querySelector('p').style.fontSize = '12px';
-  
+let tamanhoFont = document.querySelector('p').style.fontSize = '14px';
+
 buttonSize.addEventListener('click', function() {
   
-    tamanhoFont = document.querySelector('p').style.fontSize = (parseInt(tamanhoFont)+1)+"px";
-    console.log(tamanhoFont);
-  
-  
-})
+  tamanhoFont = document.querySelector('p').style.fontSize = (parseInt(tamanhoFont)+1)+"px";
+  console.log(tamanhoFont);
+
+});
+
+// 4 Espaçamento entre as linhas do texto;
+let spaceLine = document.querySelector('.button-spaceLine');
+let lineHeight = document.querySelector('p').style.lineHeight = localStorage.getItem("lineHeight")
+if(lineHeight != '14px'){
+  let lineHeight = document.querySelector('p').style.lineHeight = localStorage.getItem("lineHeight")
+} else {
+  let lineHeight = document.querySelector('p').style.lineHeight = '14px'
+
 }
+
+
+spaceLine.addEventListener('click', function() {
+  lineHeight = document.querySelector('p').style.lineHeight = (parseInt(lineHeight)+1)+"px";
+  localStorage.setItem('lineHeight', lineHeight);
+  console.log(localStorage.getItem("lineHeight")) 
+});
+
+}
+
+// 5 - Tipo da fonte
+ let containerFont = document.querySelector('.button-typeFont');
+ let fontType = document.querySelectorAll('p');
+ 
+ containerFont.addEventListener('click', function(){
+   for (let index = 0; index < fontType.length; index =+1) {
+     let fonte = fontType.selectOptions
+     console.log(fonte)
+    //  colorParagraph[index].style.color = colorP;
+    //  localStorage.setItem("colorP", colorP)
+   }
+  });
+
+//   let containerP = document.querySelector('.button-textColor');
+//  let colorParagraph = document.querySelectorAll('p');
+ 
+//  containerP.addEventListener('click', function(){
+//    for (let index = 0; index < colorParagraph.length; index =+1) {
+//      let colorP = backgroundColors[Math.floor((Math.random() * backgroundColors.length))]
+//      colorParagraph[index].style.color = colorP;
+//      localStorage.setItem("colorP", colorP)
+//    }
+//   });
