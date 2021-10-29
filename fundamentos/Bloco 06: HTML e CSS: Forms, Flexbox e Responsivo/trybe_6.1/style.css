@@ -1,0 +1,67 @@
+* {
+  /* reset propriedades */
+  margin: 0;
+  padding: 0;
+  /* mantem o tamanho de um container width e height box-sizing*/
+  box-sizing: border-box; 
+}
+
+.title-header {
+  margin: 0 auto;
+  background-color: #1877f2;
+  text-align: center;
+  padding: 35px;
+  border: 2px solid black;
+  color:whitesmoke;
+  font-size: 23px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#title-form {
+  text-align: center;
+  font-size: 29px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: midnightblue; 
+}
+.dados-pessoa {
+  background-color: #d6dfeb;
+  width: 80%;
+  margin: 1% auto;
+  padding: 35px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type=text], input[type=email] {
+  padding: 8px;
+  width: 80%;
+  margin-left: 35px auto;
+  border-radius: 7px;
+  border: 1px solid rgb(0, 0, 0);
+
+}
+
+.inputs {
+  width: 90%;
+  margin: 0 14% auto;
+}
+
+input[type=radio] {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.tipo-residencia {
+  float: left;
+   width: auto;
+   margin-left: 3em;
+}
+
+.div-btn {
+  width: 90%;
+  margin: 30px auto;
+}
