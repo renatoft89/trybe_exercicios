@@ -1,7 +1,7 @@
 window.onload = function () {
   criarEstados();
 
-  let btnEnviar = document.querySelector('.enviar-form')
+  let btnEnviar = document.querySelector('.envia-form')
   btnEnviar.addEventListener('click', enviarForm);
 
 

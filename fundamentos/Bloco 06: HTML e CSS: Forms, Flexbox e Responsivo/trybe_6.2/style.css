@@ -1,11 +1,3 @@
-* {
-  /* reset propriedades */
-  margin: 0;
-  padding: 0;
-  /* mantem o tamanho de um container width e height box-sizing*/
-  box-sizing: border-box; 
-}
-
 .title-header {
   margin: 0 auto;
   background-color: #1877f2;
@@ -28,9 +20,7 @@
   width: 70%;
   margin: 1% auto;
   padding: 35px;
-}
-.dados-pessoa {
-  padding-left: 2%;
+  border-radius: 6px;
 }
 
 label {
@@ -38,14 +28,19 @@ label {
   margin-top: 10px;
 }
 
-input[type=text], input[type=email] {
+input[type=text], input[type=email], #resumo {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
+  border-radius: 10px;
 
+}
+#estado {
+  width: 20%;
+  background: #f1f1f1;
 }
 
 .inputs {
@@ -53,24 +48,16 @@ input[type=text], input[type=email] {
   margin: 0 14% auto;
 }
 
-.enviar-form {
-  background-color: #04AA6D;
-  color: white;
+#envia-form {
   padding: 16px 20px;
-  margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 40%;
   opacity: 0.9;
 }
 
-.limpa-form {
-  background-color: #04AA6D;
-  color: white;
+#limpa-form {
   padding: 16px 20px;
-  margin-right: 0px;
   border: none;
   cursor: pointer;
-  width: 40%;
   opacity: 0.9;
 }
