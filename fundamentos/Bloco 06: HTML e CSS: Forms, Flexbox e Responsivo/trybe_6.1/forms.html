@@ -1,94 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="title-header">
-      <h1>Formulario - Currículo.</h1>
-    </header>
-    <form class="form-curriculo">
-    <fieldset class="dados-pessoa">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="title-header">
+    <h1>Formulario - Currículo.</h1>
+  </header>
+  <form class="form-curriculo">
+    <fieldset>
       <h2 id="title-form">Cadastro</h2>
-      <div class="inputs">
-      <label for="nome-completo">Nome: </label>
-      <input type="text" maxlength="40" id="nome-completo" required />
+      <div class="dados-pessoa">
+        <label for="nome-completo">Nome: </label>
+        <input type="text" maxlength="40" id="nome-completo" required />
+      </div>
+      <div class="dados-pessoa">
+        <label for="email">Email: </label>
+        <input type="email" maxlength="50" id="email" required />
+      </div>
+      <div class="dados-pessoa">
+        <label for="cpf">Cpf: </label>
+        <input type="text" maxlength="11" id="cpf" required />
+      </div>
+      <div class="dados-pessoa">
+        <label for="endereco">Endereço: </label>
+        <input type="text" maxlength="200" id="endereco" required />
+      </div>
+      <div class="dados-pessoa">
+        <label for="cidade">Cidade: </label>
+        <input type="text" maxlength="28" id="cidade" required />
+      </div>
+      <div class="dados-pessoa">
+        <label for="estado">Estado: </label>
+        <select id="estado" name="estado" required>
+          <option value=''>Qual seu Estado</option>
+        </select>
+      </div>
 
-      <label for="email">Email: </label>
-      <input type="email" maxlength="50" id="email" required />
-
-      <label for="cpf">Cpf: </label>
-      <input type="text" maxlength="11" id="cpf" required />
-
-      <label for="endereco">Endereço: </label>
-      <input type="text" maxlength="200" id="endereco" required />
-
-      <label for="cidade">Cidade: </label>
-      <input type="text" maxlength="28" id="cidade" required />
-
-      <label for="estado">Estado: </label>
-      <select id="estado" name="estado" required>
-        <option value="AC">Acre</option>
-        <option value="AL">Alagoas</option>
-        <option value="AP">Amapá</option>
-        <option value="AM">Amazonas</option>
-        <option value="BA">Bahia</option>
-        <option value="CE">Ceará</option>
-        <option value="DF">Distrito Federal</option>
-        <option value="ES">Espírito Santo</option>
-        <option value="GO">Goiás</option>
-        <option value="MA">Maranhão</option>
-        <option value="MT">Mato Grosso</option>
-        <option value="MS">Mato Grosso do Sul</option>
-        <option value="MG">Minas Gerais</option>
-        <option value="PA">Pará</option>
-        <option value="PB">Paraíba</option>
-        <option value="PR">Paraná</option>
-        <option value="PE">Pernambuco</option>
-        <option value="PI">Piauí</option>
-        <option value="RJ">Rio de Janeiro</option>
-        <option value="RN">Rio Grande do Norte</option>
-        <option value="RS">Rio Grande do Sul</option>
-        <option value="RO">Rondônia</option>
-        <option value="RR">Roraima</option>
-        <option value="SC">Santa Catarina</option>
-        <option value="SP">São Paulo</option>
-        <option value="SE">Sergipe</option>
-        <option value="TO">Tocantins</option>
-        <option value="EX">Estrangeiro</option>
-      </select>
       <div class="tipo-residencia"></div>
+
       <p>Tipo Residencia:</p>
-        <input type="radio" id="casa" name="tipo_residencia" value="HTML" required/>  
+      <input type="radio" id="casa" name="tipo_residencia" value="HTML" required />  
       <label for="html">Casa</label><br />
         <input type="radio" id="ap" name="tipo_residencia" value="CSS" />  
       <label for="css">Apartamento</label><br />
       </div>
-          
-    </div>  
+       
+      </div>
     </fieldset>
     <fieldset class="dados-pessoa">
       <h2>Resumo Curriculo</h2>
       <textarea id="resumo" name="texto-resumo" maxlength="1000" rows="4" cols="50" required></textarea>
-      
+
       <label for="cargo">Cargo: </label>
       <input type="text" maxlength="40" id="cargo" required />
 
       <h3>Resumo Curriculo</h3>
       <textarea id="resumo-cargo" name="cargo-resumo" maxlength="500" rows="4" cols="40" required></textarea>
-      
+
       <label for="date">Data Inicio: </label>
       <input id="date" type="date">
 
     </fieldset>
     <div class="div-btn">
-      <button type="submit">Enviar</button>
+      <button class="enviar-form" type="submit">Enviar</button>
+      <button class="limpa-form" type="submit">Limpar</button>
     </div>
-    
+
   </form>
-  </body>
+</body>
+<script src="script.js"></script>
 </html>
