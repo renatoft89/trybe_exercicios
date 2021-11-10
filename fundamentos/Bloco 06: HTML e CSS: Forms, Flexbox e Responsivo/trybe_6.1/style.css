@@ -1,0 +1,76 @@
+* {
+  /* reset propriedades */
+  margin: 0;
+  padding: 0;
+  /* mantem o tamanho de um container width e height box-sizing*/
+  box-sizing: border-box; 
+}
+
+.title-header {
+  margin: 0 auto;
+  background-color: #1877f2;
+  text-align: center;
+  padding: 35px;
+  border: 2px solid black;
+  color:whitesmoke;
+  font-size: 23px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#title-form {
+  text-align: center;
+  font-size: 29px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: midnightblue; 
+}
+.form-curriculo {
+  background-color: #d6dfeb;
+  width: 70%;
+  margin: 1% auto;
+  padding: 35px;
+}
+.dados-pessoa {
+  padding-left: 2%;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+
+}
+
+.inputs {
+  width: 90%;
+  margin: 0 14% auto;
+}
+
+.enviar-form {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+}
+
+.limpa-form {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin-right: 0px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+}
