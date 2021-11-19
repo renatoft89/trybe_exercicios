@@ -64,10 +64,10 @@ const books = [
 // Adicione o código do exercício aqui:
 function fantasyOrScienceFictionAuthors() {
   // escreva seu código aqui
-  const retorno = books.map((book) => ({
-    author: book.author.name,
-  }))
-  .sort((obj1, obj2) => obj1.name - obj2.name);
-  console.log(retorno)
+  const wantedGenres = ['Fantasia', 'Ficção Científica'];
+  return books
+    .filter((book) => wantedGenres.includes(book.genre))
+    .map((book) => book.author.name).sort();
 }
+console.log(fantasyOrScienceFictionAuthors());
 fantasyOrScienceFictionAuthors();
